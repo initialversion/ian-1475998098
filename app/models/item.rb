@@ -5,4 +5,6 @@ class Item < ApplicationRecord
 
   # Validations
 
+  validates :image, :presence => true
+
 end
