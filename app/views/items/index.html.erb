@@ -17,7 +17,7 @@
       <% @items.each do |item| %>
       <tr>
         <td><%= item.bin.user_id %></td>
-        <td><%= item.image %></td>
+        <td><img src='<%= item.image %>' class='img-responsive'></td>
         <td>
           <a href="/items/<%= item.id %>" class="btn btn-primary">Show</a>
           <a href="/items/<%= item.id %>/edit" class="btn btn-warning">Edit</a>
