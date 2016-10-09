@@ -23,3 +23,23 @@
     </div>
   </div>
 </div>
+
+<!-- A Bin has many items -->
+
+<div class="row">
+  <div class="col-md-12">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-info">
+        Items
+      </li>
+
+      <% @bin.items.each do |item| %>
+        <li class="list-group-item">
+          <a href="/items/<%= item.id %>">
+            <%= item.user_id %>
+          </a>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
