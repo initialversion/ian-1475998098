@@ -24,7 +24,7 @@
           Bin
         </label>
 
-        <input type="text" id="bin_id" name="bin_id" placeholder="Bin" class="form-control" value="<%= @item.bin_id %>">
+        <%= select_tag(:bin_id, options_from_collection_for_select(Bin.all, :id, :user_id, @item.bin_id), :class => "form-control") %>
       </div>
 
       <!-- Label and input for image -->
