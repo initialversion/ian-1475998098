@@ -16,7 +16,7 @@
 
       <% @items.each do |item| %>
       <tr>
-        <td><%= item.bin_id %></td>
+        <td><%= item.bin.user_id %></td>
         <td><%= item.image %></td>
         <td>
           <a href="/items/<%= item.id %>" class="btn btn-primary">Show</a>
