@@ -15,7 +15,7 @@
 
       <% @bins.each do |bin| %>
       <tr>
-        <td><%= bin.user_id %></td>
+        <td><%= bin.user.created_at %></td>
         <td>
           <a href="/bins/<%= bin.id %>" class="btn btn-primary">Show</a>
           <a href="/bins/<%= bin.id %>/edit" class="btn btn-warning">Edit</a>
