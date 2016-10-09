@@ -8,6 +8,10 @@ class Item < ApplicationRecord
 
   # Indirect associations
 
+  has_many   :tags,
+             :through => :taggings,
+             :source => :tag
+
   # Validations
 
   validates :image, :presence => true
