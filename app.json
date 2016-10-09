@@ -1,0 +1,1 @@
+{"name":"Ian","repository":"https://github.com/initialversion/ian-1475998098","env":{"CLOUDINARY_CLOUD_NAME":{"required":true},"CLOUDINARY_API_KEY":{"required":true},"CLOUDINARY_API_SECRET":{"required":true}}}
